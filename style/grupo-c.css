@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/f3/47/df/f347df43315982dedff0123ef95c2d5f.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    animation-name: animacion-de-body;
+    animation-duration: 2s;
+
+}
+
+@keyframes animacion-de-body {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:540px) {
+    header img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    header h1 {
+        color: white;
+        display: contents;
+        text-align: center;
+    }
+
+    main {
+        color: white;
+        text-align: center;
+        animation-name: animacion-de-grupo;
+        animation-duration: 2s;
+        background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
+    }
+
+    @keyframes animacion-de-grupo {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    main a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .card {
+        border-radius: 10px;
+        border-color: rgba(158, 12, 58, 0.685);
+        border-width: 5px;
+        margin: 10px;
+        background: none;
+    }
+
+    .img-de-equipo {
+        border-radius: 10px;
+    }
+
+    .card-body {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .logo-de-seleccion {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+    }
+
+    .card ul li {
+        background: none;
+        color: white;
+        text-align: center;
+    }
+
+    .card h6 {
+        color: white;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        color: white;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .botones {
+        background-color: rgb(99, 29, 63);
+        border-radius: 5px;
+        border-color: rgba(158, 12, 58, 0.685);
+        opacity: 900%;
+        color: white;
+    }
+
+    footer h6 {
+        color: white;
+        font-size: 10px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    header img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    header h1 {
+        color: white;
+        text-align: center;
+    }
+
+    main {
+        color: white;
+        text-align: center;
+        animation-name: animacion-de-grupo;
+        animation-duration: 2s;
+        background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
+    }
+
+    @keyframes animacion-de-grupo {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    main a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .card {
+        border-radius: 10px;
+        border-color: rgba(158, 12, 58, 0.685);
+        border-width: 5px;
+        margin: 10px;
+        background: none;
+    }
+
+    .img-de-equipo {
+        border-radius: 10px;
+    }
+
+    .card-body {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .logo-de-seleccion {
+        height: 60px;
+        width: 60px;
+    }
+
+    .card ul li {
+        background: none;
+        color: white;
+    }
+
+    .card h6 {
+        color: white;
+    }
+
+    nav {
+        text-align: center;
+        color: white;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .botones {
+        background-color: rgb(99, 29, 63);
+        border-radius: 5px;
+        border-color: rgba(158, 12, 58, 0.685);
+        opacity: 900%;
+        color: white;
+    }
+
+    footer h6 {
+        color: white;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    header img {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+
+    header h1 {
+        color: white;
+        display: contents;
+        text-align: center;
+    }
+
+    main {
+        color: white;
+        text-align: center;
+        animation-name: animacion-de-grupo;
+        animation-duration: 2s;
+        background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
+    }
+
+    @keyframes animacion-de-grupo {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    main a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .card {
+        border-radius: 10px;
+        border-color: rgba(158, 12, 58, 0.685);
+        border-width: 5px;
+        margin: 10px;
+        background: none;
+    }
+
+    .img-de-equipo {
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .card-body {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .logo-de-seleccion {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-title {
+        text-align: center;
+        color: white;
+        margin: 5px;
+    }
+
+    .card ul li {
+        background: none;
+        color: white;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        color: white;
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .botones {
+        background-color: rgb(99, 29, 63);
+        border-radius: 5px;
+        border-color: rgba(158, 12, 58, 0.685);
+        opacity: 900%;
+        color: white;
+    }
+
+    footer h6 {
+        color: white;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:1140px) {
+    header img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    header h1 {
+        display: contents;
+        color: white;
+    }
+
+    main {
+        color: white;
+        text-align: center;
+        animation-name: animacion-de-grupo;
+        animation-duration: 2s;
+        background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
+    }
+
+    @keyframes animacion-de-grupo {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    main a {
+        color: white;
+        text-align: center;
+    }
+
+    .card {
+        border-radius: 10px;
+        border-color: rgba(158, 12, 58, 0.685);
+        border-width: 5px;
+        margin: 10px;
+        background: none;
+    }
+
+    .img-de-equipo {
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .card-body {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .logo-de-seleccion {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+    }
+
+    .card-title {
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .card ul li {
+        background: none;
+        color: white;
+    }
+
+    .card h6 {
+        color: white;
+    }
+
+    nav {
+        text-align: center;
+        color: white;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .botones {
+        background-color: rgb(99, 29, 63);
+        border-radius: 5px;
+        border-color: rgba(158, 12, 58, 0.685);
+        opacity: 900%;
+        color: white;
+    }
+
+    footer h6 {
+        color: white;
+        font-size: 10px;
+        margin: 10px;
+    }
+
+}
+
+
+
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+header h1 {
+    color: white;
+    display: contents;
+}
+
+main {
+    display: block;
+    text-align: center;
+    color: white;
+    animation-name: animacion-de-grupo;
+    animation-duration: 2s;
+    background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
+
+}
+
+@keyframes animacion-de-grupo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+main a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.card {
+    border-radius: 10px;
+    border-color: rgba(158, 12, 58, 0.685);
+    border-width: 5px;
+    margin: 10px;
+    background: none;
+}
+
+.img-de-equipo {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-body {
+    display: inline-block;
+    text-align: center;
+}
+
+.logo-de-seleccion {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.card-title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card ul li {
+    background: none;
+    color: white;
+}
+
+
+nav {
+    text-align: center;
+    color: white;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.botones {
+    background-color: rgb(99, 29, 63);
+    border-radius: 5px;
+    border-color: rgba(158, 12, 58, 0.685);
+    opacity: 900%;
+    color: white;
+}
+
+footer h6 {
+    color: white;
+    font-size: 12px;
+    margin: 10px;
+}
