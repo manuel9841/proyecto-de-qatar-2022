@@ -1,5 +1,12 @@
 @import "utilities/variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bebas Neue', cursive;
+}
 
 body{
     background-image: url(https://i.pinimg.com/originals/f3/47/df/f347df43315982dedff0123ef95c2d5f.png);
@@ -30,7 +37,7 @@ body{
     }
 
     nav {
-        text-align: center;
+        text-align: map-get($estilos, posicion);
         color:$color;
         a{
             text-decoration: none;
@@ -55,34 +62,71 @@ body{
         width: auto;
         height: auto;
         background: rgba(255, 0, 0, 0);
-        text-align: center;
-        }
-
-    .logo-de-selecciones{
-        width: $ancho - 40;
-        height: $alto - 40;
-    }
-
-    .card-body h5 {
-        text-align: center;
-        color: white;
+        text-align: map-get($estilos, posicion);
         img {
             width: 100%;
             height: 100%;
-            border-radius: 10px;
+            border-radius: $tamano;
         }
+        }
+
+    .logo-de-selecciones{
+        width: 60px;
+        height:60px;
+        
+    }
+
+    .card-body h5 {
+        text-align: map-get($estilos, posicion);
+        color: $color;
+        
+    }
+    .accordion {
+        margin: 5px;
+    }
+    .accordion-button {
+        background-color: $color-border;
+        color: $color;
+        
+    }
+    .accordion-item {
+        background-color: $color-border;
+        color: $color;
+        text-align: initial;
+    }
+    .botones {
+        background-color: rgb(99, 29, 63);
+        border-radius: 5px;
+        border-color: $color-border;
+        opacity: 900%;
+        color: $color;
+    }
+    nav {
+        color: $color;
+        text-align: map-get($estilos, posicion);
+        font-size: 15px;
+        margin-top: $tamano;
+        margin-bottom: $tamano;
+    }
+
+
+    footer h6 {
+        color: $color;
+        font-size: 12px;
+        margin: $tamano;
     }
 }
 
-@for $border-color from 1 through 10{
-        .card-#{$border-color}{
-            color:10 *$border-color;
-        }
-    }
+.redes-sociales{
+    text-align: map-get($estilos, posicion);
 
     @each $redsocial, $colordered in $redes {
-        .fa-#{$redsocial}{
+        .btn-de-red-social-#{$redsocial}{
             background-color: $colordered;
-            margin:$margen/2 ;
+            margin:$margen/22 ;
+            border-radius: $tamano/2;
+            font-size: $tamano;
         }
     }
+    
+}

@@ -1,6 +1,7 @@
 $ancho:100px; /* width*/
 $alto:100px;  /*hieght*/
 $margen:100px; /*margin*/
+$tamano:10px;
 $redes: (
     facebook: #3c5a9a,
     twitter: #00acee,
@@ -11,3 +12,6 @@ $border-color: rgba(255, 0, 0, 0.425);
 $color: rgb(255, 255, 255);
 $color-border:rgb(99, 29, 63);
 
+$estilos:(
+    posicion: center,
+);
