@@ -1,0 +1,88 @@
+@import "utilities/variables";
+
+
+body{
+    background-image: url(https://i.pinimg.com/originals/f3/47/df/f347df43315982dedff0123ef95c2d5f.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    animation-name: animacion-de-body;
+    animation-duration: 2s;
+}
+
+@keyframes animacion-de-body {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:576px) {
+    header{
+        margin:$margen/20;
+        img{
+            width:$ancho - 20;
+        }
+    }
+
+    nav {
+        text-align: center;
+        color:$color;
+        a{
+            text-decoration: none;
+            color:$color;
+            ol{
+                list-style-type: none;
+            }
+        }
+    }
+
+    #carouselExampleCaptions{
+        width:auto;
+        height:auto;
+        margin: auto;
+    }
+
+    .card {
+        border-style: solid;
+        border-color: $color-border;
+        border-width: $ancho/20;
+        margin: $margen/10;
+        width: auto;
+        height: auto;
+        background: rgba(255, 0, 0, 0);
+        text-align: center;
+        }
+
+    .logo-de-selecciones{
+        width: $ancho - 40;
+        height: $alto - 40;
+    }
+
+    .card-body h5 {
+        text-align: center;
+        color: white;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+@for $border-color from 1 through 10{
+        .card-#{$border-color}{
+            color:10 *$border-color;
+        }
+    }
+
+    @each $redsocial, $colordered in $redes {
+        .fa-#{$redsocial}{
+            background-color: $colordered;
+            margin:$margen/2 ;
+        }
+    }
