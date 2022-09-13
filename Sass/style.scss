@@ -2,13 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Bebas Neue', cursive;
 }
 
-body{
+body {
     background-image: url(https://i.pinimg.com/originals/f3/47/df/f347df43315982dedff0123ef95c2d5f.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,28 +29,40 @@ body{
 }
 
 @media screen and (max-width:576px) {
-    header{
-        margin:$margen/20;
-        img{
-            width:$ancho - 20;
+    header {
+        margin: $margen/20;
+
+        img {
+            width: $ancho - 20;
+        }
+
+        h1 {
+            color: $color;
+            text-align: map-get($estilos, posicion);
         }
     }
 
     nav {
         text-align: map-get($estilos, posicion);
-        color:$color;
-        a{
+        color: $color;
+
+        a {
             text-decoration: none;
-            color:$color;
+            color: $color;
+            list-style-type: none;
+
+            
+        }
+        ul{
             ol{
                 list-style-type: none;
             }
-        }
     }
+}
 
-    #carouselExampleCaptions{
-        width:auto;
-        height:auto;
+    img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
         margin: auto;
     }
 
@@ -63,37 +75,40 @@ body{
         height: auto;
         background: rgba(255, 0, 0, 0);
         text-align: map-get($estilos, posicion);
+
+        .logo-de-selecciones {
+            width: 60px;
+            height: 60px;
+        }
+
         img {
-            width: 100%;
-            height: 100%;
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
             border-radius: $tamano;
         }
+
+        h5 {
+            text-align: map-get($estilos, posicion);
+            color: $color;
         }
 
-    .logo-de-selecciones{
-        width: 60px;
-        height:60px;
-        
+        .accordion {
+            margin: 5px;
+        }
+
+        .accordion-button {
+            background-color: $color-border;
+            color: $color;
+
+        }
     }
 
-    .card-body h5 {
-        text-align: map-get($estilos, posicion);
-        color: $color;
-        
-    }
-    .accordion {
-        margin: 5px;
-    }
-    .accordion-button {
-        background-color: $color-border;
-        color: $color;
-        
-    }
     .accordion-item {
         background-color: $color-border;
         color: $color;
         text-align: initial;
     }
+
     .botones {
         background-color: rgb(99, 29, 63);
         border-radius: 5px;
@@ -101,6 +116,13 @@ body{
         opacity: 900%;
         color: $color;
     }
+    .botones-limpiar-capo{
+        @extend .botones;
+    }
+    .botones-registrarme{
+        @extend .botones;
+    }
+
     nav {
         color: $color;
         text-align: map-get($estilos, posicion);
@@ -115,18 +137,271 @@ body{
         font-size: 12px;
         margin: $tamano;
     }
-}
 
-.redes-sociales{
-    text-align: map-get($estilos, posicion);
+    .redes-sociales {
+        text-align: map-get($estilos, posicion);
 
-    @each $redsocial, $colordered in $redes {
-        .btn-de-red-social-#{$redsocial}{
-            background-color: $colordered;
-            margin:$margen/22 ;
-            border-radius: $tamano/2;
-            font-size: $tamano;
+        @each $redsocial,
+        $colordered in $redes {
+            .btn-de-red-social-#{$redsocial} {
+                background-color: $colordered;
+                margin: $margen/22;
+                border-radius: $tamano/2;
+                color: white;
+                font-size: $tamano;
+                border-color: $color;
+                width: 50px;
+                height: 30px;
+            }
         }
     }
+
+}
+
+@media screen and (max-width:992px) {
+
+    header {
+        margin: $margen/20;
+
+        img {
+            width: $ancho - 20;
+        }
+
+        h1 {
+            color: $color;
+            text-align: map-get($estilos, posicion);
+        }
+    }
+
+    nav {
+        text-align: map-get($estilos, posicion);
+        color: $color;
+        
+        a {
+            text-decoration: none;
+            color: $color;
+            font-size:$tamano-lg/2;
+        }
+        ul{
+            ol{
+                list-style-type: none;
+            }
+    }
+}
+
+
+img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: auto;
+}
+
+.card {
+    border-style: solid;
+    border-color: $color-border;
+    border-width: $ancho/20;
+    margin: $margen/10;
+    width: auto;
+    height: auto;
+    background: rgba(255, 0, 0, 0);
+    text-align: map-get($estilos, posicion);
+
+    .logo-de-selecciones {
+        width: 60px;
+        height: 60px;
+    }
+
+    img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        border-radius: $tamano;
+    }
+
+    h5 {
+        text-align: map-get($estilos, posicion);
+        color: $color;
+    }
+
+    .accordion {
+        margin: 5px;
+    }
+
+    .accordion-button {
+        background-color: $color-border;
+        color: $color;
+
+    }
+}
+
+.accordion-item {
+    background-color: $color-border;
+    color: $color;
+    text-align: initial;
+}
+
+.botones {
+    background-color: rgb(99, 29, 63);
+    border-radius: 5px;
+    border-color: $color-border;
+    opacity: 900%;
+    color: $color;
+}
+
+nav {
+    color: $color;
+    text-align: map-get($estilos, posicion);
+    font-size: 15px;
+    margin-top: $tamano;
+    margin-bottom: $tamano;
+}
+
+
+footer h6 {
+    color: $color;
+    font-size: 12px;
+    margin: $tamano;
+}
+
+.redes-sociales {
+    text-align: map-get($estilos, posicion);
+
+    @each $redsocial,
+    $colordered in $redes {
+        .btn-de-red-social-#{$redsocial} {
+            background-color: $colordered;
+            margin: $margen/22;
+            border-radius: $tamano/2;
+            color: white;
+            font-size: $tamano !important;
+            border-color: $color;
+            width: 50px;
+            height: 30px;
+        }
+    }
+}
+}
+
+@media screen and (max-width:1400px) {
     
+    header {
+        margin: $margen/20;
+
+        img {
+            width: $ancho;
+            height: $ancho;
+        }
+
+        h1 {
+            color: $color;
+            text-align: map-get($estilos, posicion);
+        }
+    }
+
+    nav {
+        text-align: map-get($estilos, posicion);
+        color: $color;
+        
+        a {
+            text-decoration: none;
+            color: $color;
+            font-size:$tamano-lg/2;
+        }
+        ul{
+            ol{
+                list-style-type: none;
+            }
+    }
+}
+
+
+img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: auto;
+}
+
+.card {
+    border-style: solid;
+    border-color: $color-border;
+    border-width: $ancho/20;
+    margin: $margen/10;
+    width: auto;
+    height: auto;
+    background: rgba(255, 0, 0, 0);
+    text-align: map-get($estilos, posicion);
+
+    .logo-de-selecciones {
+        width: 60px;
+        height: 60px;
+    }
+
+    img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        border-radius: $tamano;
+    }
+
+    h5 {
+        text-align: map-get($estilos, posicion);
+        color: $color;
+    }
+
+    .accordion {
+        margin: 5px;
+    }
+
+    .accordion-button {
+        background-color: $color-border;
+        color: $color;
+
+    }
+}
+
+.accordion-item {
+    background-color: $color-border;
+    color: $color;
+    text-align: initial;
+}
+
+.botones {
+    background-color: rgb(99, 29, 63);
+    border-radius: 5px;
+    border-color: $color-border;
+    opacity: 900%;
+    color: $color;
+}
+
+
+nav {
+    color: $color;
+    text-align: map-get($estilos, posicion);
+    font-size: 15px;
+    margin-top: $tamano;
+    margin-bottom: $tamano;
+}
+
+
+footer h6 {
+    color: $color;
+    font-size: 12px;
+    margin: $tamano;
+}
+
+.redes-sociales {
+    text-align: map-get($estilos, posicion);
+
+    @each $redsocial,
+    $colordered in $redes {
+        .btn-de-red-social-#{$redsocial} {
+            background-color: $colordered;
+            margin: $margen/22;
+            border-radius: $tamano/2;
+            color: white;
+            font-size: $tamano+3;
+            border-color: $color;
+            width: 50px;
+            height: 30px;
+        }
+    }
+}
 }

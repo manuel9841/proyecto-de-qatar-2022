@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* width*/
+/*hieght*/
+/*margin*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Bebas Neue', cursive;
@@ -12,10 +15,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-
     animation-name: animacion-de-body;
     animation-duration: 2s;
-
 }
 
 @keyframes animacion-de-body {
@@ -28,41 +29,44 @@ body {
     }
 }
 
-@media screen and (max-width:576px) {
-    header{
+@media screen and (max-width: 576px) {
+    header {
         margin: 5px;
     }
-    header img{
+
+    header img {
         width: 80px;
-        height: 80px;
-        margin: 10px;
     }
-    header h1{
+
+    header h1 {
         color: white;
         text-align: center;
     }
+
     nav {
         text-align: center;
         color: white;
-        
     }
-    nav a{
+
+    nav a {
         text-decoration: none;
         color: white;
-        
-    }
-    nav ol{
         list-style-type: none;
     }
-    #carouselExampleCaptions{
-        width:auto;
-        height:auto;
+
+    nav ul ol {
+        list-style-type: none;
+    }
+
+    img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
         margin: auto;
     }
 
     .card {
         border-style: solid;
-        border-color: rgb(99, 29, 63);
+        border-color: #631d3f;
         border-width: 5px;
         margin: 10px;
         width: auto;
@@ -70,39 +74,46 @@ body {
         background: rgba(255, 0, 0, 0);
         text-align: center;
     }
-    .logo-de-selecciones{
+
+    .card .logo-de-selecciones {
         width: 60px;
-        height:60px;
+        height: 60px;
     }
-    .card-body h5 {
+
+    .card img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        border-radius: 10px;
+    }
+
+    .card h5 {
         text-align: center;
         color: white;
     }
-    .card-body img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
-    .accordion {
+
+    .card .accordion {
         margin: 5px;
     }
-    .accordion-button {
-        background-color: rgb(100, 30, 64);
+
+    .card .accordion-button {
+        background-color: #631d3f;
         color: white;
-        
     }
+
     .accordion-item {
-        background-color: rgb(100, 30, 64);
+        background-color: #631d3f;
         color: white;
         text-align: initial;
     }
-    .botones {
-        background-color: rgb(99, 29, 63);
+
+    .botones, .botones-limpiar-capo, .botones-registrarme {
+        background-color: #631d3f;
         border-radius: 5px;
-        border-color: rgba(158, 12, 58, 0.685);
+        border-color: #631d3f;
         opacity: 900%;
         color: white;
     }
+
     nav {
         color: white;
         text-align: center;
@@ -111,143 +122,88 @@ body {
         margin-bottom: 10px;
     }
 
-
     footer h6 {
         color: white;
         font-size: 12px;
         margin: 10px;
     }
 
-
-
-}
-
-@media screen and (max-width:992px) {
-    header{
-        margin: 5px;
-    }
-    header img{
-        width: 80px;
-        height: 80px;
-        margin: 10px;
-    }
-    header h1{
-        color: white;
+    .redes-sociales {
         text-align: center;
     }
-    nav {
-        text-align: center;
-        color: white;
-        
-    }
-    nav a{
-        text-decoration: none;
-        color: white;
-        
-    }
-    nav ol{
-        list-style-type: none;
-    }
-    #carouselExampleCaptions{
-        width:auto;
-        height:auto;
-        margin: auto;
-    }
 
-    .card {
-        border-style: solid;
-        border-color: rgb(99, 29, 63);
-        border-width: 5px;
-        margin: 10px;
-        width: auto;
-        height: auto;
-        background: rgba(255, 0, 0, 0);
-        text-align: center;
-    }
-    .logo-de-selecciones{
-        width: 60px;
-        height:60px;
-    }
-    .card-body h5 {
-        text-align: center;
-        color: white;
-    }
-    .card-body img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
-    .accordion {
-        margin: 5px;
-    }
-    .accordion-button {
-        background-color: rgb(100, 30, 64);
-        color: white;
-        
-    }
-    .accordion-item {
-        background-color: rgb(100, 30, 64);
-        color: white;
-        text-align: initial;
-    }
-    .botones {
-        background-color: rgb(99, 29, 63);
+    .redes-sociales .btn-de-red-social-facebook {
+        background-color: #3c5a9a;
+        margin: 4.54545px;
         border-radius: 5px;
-        border-color: rgba(158, 12, 58, 0.685);
-        opacity: 900%;
         color: white;
-    }
-    nav {
-        color: white;
-        text-align: center;
-        font-size: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        font-size: 10px;
+        border-color: white;
+        width: 50px;
+        height: 30px;
     }
 
-
-    footer h6 {
+    .redes-sociales .btn-de-red-social-twitter {
+        background-color: #00acee;
+        margin: 4.54545px;
+        border-radius: 5px;
         color: white;
-        font-size: 12px;
-        margin: 10px;
+        font-size: 10px;
+        border-color: white;
+        width: 50px;
+        height: 30px;
+    }
+
+    .redes-sociales .btn-de-red-social-instagram {
+        background-color: violet;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px;
+        border-color: white;
+        width: 50px;
+        height: 30px;
     }
 }
 
-@media screen and (max-width:1400px) {
-    header{
+@media screen and (max-width: 992px) {
+    header {
         margin: 5px;
     }
-    header img{
+
+    header img {
         width: 80px;
-        height: 80px;
-        margin: 10px;
     }
-    header h1{
+
+    header h1 {
         color: white;
         text-align: center;
     }
+
     nav {
         text-align: center;
         color: white;
-        
     }
-    nav a{
+
+    nav a {
         text-decoration: none;
         color: white;
-        
+        font-size: 25px;
     }
-    nav ol{
+
+    nav ul ol {
         list-style-type: none;
     }
-    #carouselExampleCaptions{
-        width:auto;
-        height:auto;
+
+    img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
         margin: auto;
     }
 
     .card {
         border-style: solid;
-        border-color: rgb(99, 29, 63);
+        border-color: #631d3f;
         border-width: 5px;
         margin: 10px;
         width: auto;
@@ -255,39 +211,46 @@ body {
         background: rgba(255, 0, 0, 0);
         text-align: center;
     }
-    .logo-de-selecciones{
+
+    .card .logo-de-selecciones {
         width: 60px;
-        height:60px;
+        height: 60px;
     }
-    .card-body h5 {
+
+    .card img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        border-radius: 10px;
+    }
+
+    .card h5 {
         text-align: center;
         color: white;
     }
-    .card-body img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
-    .accordion {
+
+    .card .accordion {
         margin: 5px;
     }
-    .accordion-button {
-        background-color: rgb(100, 30, 64);
+
+    .card .accordion-button {
+        background-color: #631d3f;
         color: white;
-        
     }
+
     .accordion-item {
-        background-color: rgb(100, 30, 64);
+        background-color: #631d3f;
         color: white;
         text-align: initial;
     }
-    .botones {
-        background-color: rgb(99, 29, 63);
+
+    .botones, .botones-limpiar-capo, .botones-registrarme {
+        background-color: #631d3f;
         border-radius: 5px;
-        border-color: rgba(158, 12, 58, 0.685);
+        border-color: #631d3f;
         opacity: 900%;
         color: white;
     }
+
     nav {
         color: white;
         text-align: center;
@@ -296,10 +259,184 @@ body {
         margin-bottom: 10px;
     }
 
+    footer h6 {
+        color: white;
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    .redes-sociales {
+        text-align: center;
+    }
+
+    .redes-sociales .btn-de-red-social-facebook {
+        background-color: #3c5a9a;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px !important;
+        border-color: white;
+        width: 50px;
+        height: 30px;
+    }
+
+    .redes-sociales .btn-de-red-social-twitter {
+        background-color: #00acee;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px !important;
+        border-color: white;
+        width: 50px;
+        height: 30px;
+    }
+
+    .redes-sociales .btn-de-red-social-instagram {
+        background-color: violet;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px !important;
+        border-color: white;
+        width: 50px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        margin: 5px;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        color: white;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        color: white;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+
+    nav ul ol {
+        list-style-type: none;
+    }
+
+    img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        margin: auto;
+    }
+
+    .card {
+        border-style: solid;
+        border-color: #631d3f;
+        border-width: 5px;
+        margin: 10px;
+        width: auto;
+        height: auto;
+        background: rgba(255, 0, 0, 0);
+        text-align: center;
+    }
+
+    .card .logo-de-selecciones {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card img {
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+        border-radius: 10px;
+    }
+
+    .card h5 {
+        text-align: center;
+        color: white;
+    }
+
+    .card .accordion {
+        margin: 5px;
+    }
+
+    .card .accordion-button {
+        background-color: #631d3f;
+        color: white;
+    }
+
+    .accordion-item {
+        background-color: #631d3f;
+        color: white;
+        text-align: initial;
+    }
+
+    .botones, .botones-limpiar-capo, .botones-registrarme {
+        background-color: #631d3f;
+        border-radius: 5px;
+        border-color: #631d3f;
+        opacity: 900%;
+        color: white;
+    }
+
+    nav {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
     footer h6 {
         color: white;
         font-size: 12px;
         margin: 10px;
+    }
+
+    .redes-sociales {
+        text-align: center;
+    }
+
+    .redes-sociales .btn-de-red-social-facebook {
+        background-color: #3c5a9a;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        border-color: white;
+        width: 50px;
+        height: 30px;
+    }
+
+    .redes-sociales .btn-de-red-social-twitter {
+        background-color: #00acee;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        border-color: white;
+        width: 50px;
+        height: 30px;
+    }
+
+    .redes-sociales .btn-de-red-social-instagram {
+        background-color: violet;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        border-color: white;
+        width: 50px;
+        height: 30px;
     }
 }

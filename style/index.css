@@ -74,7 +74,37 @@ body {
   footer {
     color: white;
     font-size: 10px;
-    margin: 20px; } }
+    margin: 20px; } 
+    .redes-sociales {
+      text-align: center; }
+      .redes-sociales .btn-de-red-social-facebook {
+        background-color: #3c5a9a;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px;
+        border-color: white;
+        width: 50px;
+        height: 30px; }
+      .redes-sociales .btn-de-red-social-twitter {
+        background-color: #00acee;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px;
+        border-color: white;
+        width: 50px;
+        height: 30px; }
+      .redes-sociales .btn-de-red-social-instagram {
+        background-color: violet;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px;
+        border-color: white;
+        width: 50px;
+        height: 30px; }
+  }
 
 @media screen and (max-width: 768px) {
   header img {
@@ -143,7 +173,37 @@ body {
     color: white; }
   footer {
     color: white;
-    margin: 10px; } }
+    margin: 10px; }
+    .redes-sociales {
+      text-align: center; }
+      .redes-sociales .btn-de-red-social-facebook {
+        background-color: #3c5a9a;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px !important;
+        border-color: white;
+        width: 50px;
+        height: 30px; }
+      .redes-sociales .btn-de-red-social-twitter {
+        background-color: #00acee;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px !important;
+        border-color: white;
+        width: 50px;
+        height: 30px; }
+      .redes-sociales .btn-de-red-social-instagram {
+        background-color: violet;
+        margin: 4.54545px;
+        border-radius: 5px;
+        color: white;
+        font-size: 10px !important;
+        border-color: white;
+        width: 50px;
+        height: 30px; } 
+  }
 
 header img {
   width: 100px;
@@ -221,3 +281,33 @@ footer {
   color: white;
   font-size: 13px;
   margin: 20px; }
+  
+  .redes-sociales {
+    text-align: center; }
+    .redes-sociales .btn-de-red-social-facebook {
+      background-color: #3c5a9a;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 13px;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
+    .redes-sociales .btn-de-red-social-twitter {
+      background-color: #00acee;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 13px;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
+    .redes-sociales .btn-de-red-social-instagram {
+      background-color: violet;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 13px;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
