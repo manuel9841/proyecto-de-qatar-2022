@@ -1,2 +1,0 @@
-agregado de npm los cambios estan en el grupo h y en el index estan los prosesado del sass
-no tienen el exten y en mixin porque no llegue a hacerlos. perdon jeje

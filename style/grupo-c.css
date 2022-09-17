@@ -1,496 +1,309 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600&display=swap');
-
+/* width*/
+/*hieght*/
+/*margin*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Saira Condensed', sans-serif;
-}
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Bebas Neue', cursive; }
 
 body {
-    background-image: url(https://i.pinimg.com/originals/f3/47/df/f347df43315982dedff0123ef95c2d5f.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
-    animation-name: animacion-de-body;
-    animation-duration: 2s;
-
-}
+  background-image: url(https://i.pinimg.com/originals/f3/47/df/f347df43315982dedff0123ef95c2d5f.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  animation-name: animacion-de-body;
+  animation-duration: 2s; }
 
 @keyframes animacion-de-body {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width:540px) {
+@media screen and (max-width: 576px) {
+  header {
+    margin: 5px; }
     header img {
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-    }
-
+      width: 80px; }
     header h1 {
-        color: white;
-        display: contents;
-        text-align: center;
-    }
-
-    main {
-        color: white;
-        text-align: center;
-        animation-name: animacion-de-grupo;
-        animation-duration: 2s;
-        background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
-    }
-
-    @keyframes animacion-de-grupo {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-
-    main a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .card {
-        border-radius: 10px;
-        border-color: rgba(158, 12, 58, 0.685);
-        border-width: 5px;
-        margin: 10px;
-        background: none;
-    }
-
-    .img-de-equipo {
-        border-radius: 10px;
-    }
-
-    .card-body {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .logo-de-seleccion {
-        width: 60px;
-        height: 60px;
-        text-align: center;
-    }
-
-    .card ul li {
-        background: none;
-        color: white;
-        text-align: center;
-    }
-
-    .card h6 {
-        color: white;
-        text-align: center;
-    }
-
-    nav {
-        text-align: center;
-        color: white;
-        margin: 10px;
-        font-size: 12px;
-    }
-
-    .botones {
-        background-color: rgb(99, 29, 63);
-        border-radius: 5px;
-        border-color: rgba(158, 12, 58, 0.685);
-        opacity: 900%;
-        color: white;
-    }
-
-    footer h6 {
-        color: white;
-        font-size: 10px;
-        margin: 10px;
-    }
-}
-
-@media screen and (max-width:720px) {
-    header img {
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-    }
-
-    header h1 {
-        color: white;
-        text-align: center;
-    }
-
-    main {
-        color: white;
-        text-align: center;
-        animation-name: animacion-de-grupo;
-        animation-duration: 2s;
-        background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
-    }
-
-    @keyframes animacion-de-grupo {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-
-    main a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .card {
-        border-radius: 10px;
-        border-color: rgba(158, 12, 58, 0.685);
-        border-width: 5px;
-        margin: 10px;
-        background: none;
-    }
-
-    .img-de-equipo {
-        border-radius: 10px;
-    }
-
-    .card-body {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .logo-de-seleccion {
-        height: 60px;
-        width: 60px;
-    }
-
-    .card ul li {
-        background: none;
-        color: white;
-    }
-
-    .card h6 {
-        color: white;
-    }
-
-    nav {
-        text-align: center;
-        color: white;
-        margin: 10px;
-        font-size: 12px;
-    }
-
-    .botones {
-        background-color: rgb(99, 29, 63);
-        border-radius: 5px;
-        border-color: rgba(158, 12, 58, 0.685);
-        opacity: 900%;
-        color: white;
-    }
-
-    footer h6 {
-        color: white;
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width:960px) {
-    header img {
-        width: 100px;
-        height: 100px;
-        margin: 20px;
-    }
-
-    header h1 {
-        color: white;
-        display: contents;
-        text-align: center;
-    }
-
-    main {
-        color: white;
-        text-align: center;
-        animation-name: animacion-de-grupo;
-        animation-duration: 2s;
-        background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
-    }
-
-    @keyframes animacion-de-grupo {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-
-    main a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .card {
-        border-radius: 10px;
-        border-color: rgba(158, 12, 58, 0.685);
-        border-width: 5px;
-        margin: 10px;
-        background: none;
-    }
-
-    .img-de-equipo {
-        border-radius: 10px;
-        margin: 10px;
-    }
-
-    .card-body {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .logo-de-seleccion {
-        width: 60px;
-        height: 60px;
-    }
-
-    .card-title {
-        text-align: center;
-        color: white;
-        margin: 5px;
-    }
-
-    .card ul li {
-        background: none;
-        color: white;
-        text-align: center;
-    }
-
-    nav {
-        text-align: center;
-        color: white;
-        margin: 10px;
-        font-size: 15px;
-    }
-
-    .botones {
-        background-color: rgb(99, 29, 63);
-        border-radius: 5px;
-        border-color: rgba(158, 12, 58, 0.685);
-        opacity: 900%;
-        color: white;
-    }
-
-    footer h6 {
-        color: white;
-        font-size: 12px;
-    }
-
-}
-
-@media screen and (max-width:1140px) {
-    header img {
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-    }
-
-    header h1 {
-        display: contents;
-        color: white;
-    }
-
-    main {
-        color: white;
-        text-align: center;
-        animation-name: animacion-de-grupo;
-        animation-duration: 2s;
-        background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
-    }
-
-    @keyframes animacion-de-grupo {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-
-    main a {
-        color: white;
-        text-align: center;
-    }
-
-    .card {
-        border-radius: 10px;
-        border-color: rgba(158, 12, 58, 0.685);
-        border-width: 5px;
-        margin: 10px;
-        background: none;
-    }
-
-    .img-de-equipo {
-        border-radius: 10px;
-        margin: 10px;
-    }
-
-    .card-body {
-        display: inline-block;
-        text-align: center;
-    }
-
-    .logo-de-seleccion {
-        width: 60px;
-        height: 60px;
-        text-align: center;
-    }
-
-    .card-title {
-        color: rgb(255, 255, 255);
-        text-align: center;
-    }
-
-    .card ul li {
-        background: none;
-        color: white;
-    }
-
-    .card h6 {
-        color: white;
-    }
-
-    nav {
-        text-align: center;
-        color: white;
-        margin: 10px;
-        font-size: 12px;
-    }
-
-    .botones {
-        background-color: rgb(99, 29, 63);
-        border-radius: 5px;
-        border-color: rgba(158, 12, 58, 0.685);
-        opacity: 900%;
-        color: white;
-    }
-
-    footer h6 {
-        color: white;
-        font-size: 10px;
-        margin: 10px;
-    }
-
-}
-
-
-
-
-header img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-}
-
-header h1 {
-    color: white;
-    display: contents;
-}
-
-main {
-    display: block;
+      color: white;
+      text-align: center; }
+  nav {
     text-align: center;
-    color: white;
-    animation-name: animacion-de-grupo;
-    animation-duration: 2s;
-    background-image: linear-gradient(to bottom, rgb(59, 0, 23), rgb(94, 24, 58));
-
-}
-
-@keyframes animacion-de-grupo {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-main a {
-    text-decoration: none;
-    color: white;
-
-}
-
-.card {
-    border-radius: 10px;
-    border-color: rgba(158, 12, 58, 0.685);
+    color: white; }
+    nav a {
+      text-decoration: none;
+      color: white;
+      list-style-type: none; }
+    nav ul ol {
+      list-style-type: none; }
+  img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: auto; }
+  .card {
+    border-style: solid;
+    border-color: #631d3f;
     border-width: 5px;
     margin: 10px;
-    background: none;
-}
-
-.img-de-equipo {
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.card-body {
-    display: inline-block;
-    text-align: center;
-}
-
-.logo-de-seleccion {
-    width: 60px;
-    height: 60px;
-    text-align: center;
-}
-
-.card-title {
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.card ul li {
-    background: none;
+    width: auto;
+    height: auto;
+    background: rgba(255, 0, 0, 0);
+    text-align: center; }
+    .card .logo-de-selecciones {
+      width: 60px;
+      height: 60px; }
+    .card img {
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+      border-radius: 10px; }
+    .card h5 {
+      text-align: center;
+      color: white; }
+    .card .accordion {
+      margin: 5px; }
+    .card .accordion-button {
+      background-color: #631d3f;
+      color: white; }
+  .accordion-item {
+    background-color: #631d3f;
     color: white;
-}
-
-
-nav {
-    text-align: center;
-    color: white;
-    margin: 10px;
-    font-size: 15px;
-}
-
-.botones {
-    background-color: rgb(99, 29, 63);
+    text-align: initial; }
+  .botones, .botones-limpiar-capo, .botones-registrarme {
+    background-color: #631d3f;
     border-radius: 5px;
-    border-color: rgba(158, 12, 58, 0.685);
+    border-color: #631d3f;
     opacity: 900%;
+    color: white; }
+  nav {
     color: white;
-}
-
-footer h6 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  footer h6 {
     color: white;
     font-size: 12px;
+    margin: 10px; }
+  .redes-sociales {
+    text-align: center; }
+    .redes-sociales .btn-de-red-social-facebook {
+      background-color: #3c5a9a;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 10px;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
+    .redes-sociales .btn-de-red-social-twitter {
+      background-color: #00acee;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 10px;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
+    .redes-sociales .btn-de-red-social-instagram {
+      background-color: violet;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 10px;
+      border-color: white;
+      width: 50px;
+      height: 30px; } }
+
+@media screen and (max-width: 992px) {
+  header {
+    margin: 5px; }
+    header img {
+      width: 80px; }
+    header h1 {
+      color: white;
+      text-align: center; }
+  nav {
+    text-align: center;
+    color: white; }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 25px; }
+    nav ul ol {
+      list-style-type: none; }
+  img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: auto; }
+  .card {
+    border-style: solid;
+    border-color: #631d3f;
+    border-width: 5px;
     margin: 10px;
-}
+    width: auto;
+    height: auto;
+    background: rgba(255, 0, 0, 0);
+    text-align: center; }
+    .card .logo-de-selecciones {
+      width: 60px;
+      height: 60px; }
+    .card img {
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+      border-radius: 10px; }
+    .card h5 {
+      text-align: center;
+      color: white; }
+    .card .accordion {
+      margin: 5px; }
+    .card .accordion-button {
+      background-color: #631d3f;
+      color: white; }
+  .accordion-item {
+    background-color: #631d3f;
+    color: white;
+    text-align: initial; }
+  .botones, .botones-limpiar-capo, .botones-registrarme {
+    background-color: #631d3f;
+    border-radius: 5px;
+    border-color: #631d3f;
+    opacity: 900%;
+    color: white; }
+  nav {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  footer h6 {
+    color: white;
+    font-size: 12px;
+    margin: 10px; }
+  .redes-sociales {
+    text-align: center; }
+    .redes-sociales .btn-de-red-social-facebook {
+      background-color: #3c5a9a;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 10px !important;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
+    .redes-sociales .btn-de-red-social-twitter {
+      background-color: #00acee;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 10px !important;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
+    .redes-sociales .btn-de-red-social-instagram {
+      background-color: violet;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 10px !important;
+      border-color: white;
+      width: 50px;
+      height: 30px; } }
+
+@media screen and (max-width: 1400px) {
+  header {
+    margin: 5px; }
+    header img {
+      width: 100px;
+      height: 100px; }
+    header h1 {
+      color: white;
+      text-align: center; }
+  nav {
+    text-align: center;
+    color: white; }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 25px; }
+    nav ul ol {
+      list-style-type: none; }
+  img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin: auto; }
+  .card {
+    border-style: solid;
+    border-color: #631d3f;
+    border-width: 5px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    background: rgba(255, 0, 0, 0);
+    text-align: center; }
+    .card .logo-de-selecciones {
+      width: 60px;
+      height: 60px; }
+    .card img {
+      width: -webkit-fill-available;
+      height: -webkit-fill-available;
+      border-radius: 10px; }
+    .card h5 {
+      text-align: center;
+      color: white; }
+    .card .accordion {
+      margin: 5px; }
+    .card .accordion-button {
+      background-color: #631d3f;
+      color: white; }
+  .accordion-item {
+    background-color: #631d3f;
+    color: white;
+    text-align: initial; }
+  .botones, .botones-limpiar-capo, .botones-registrarme {
+    background-color: #631d3f;
+    border-radius: 5px;
+    border-color: #631d3f;
+    opacity: 900%;
+    color: white; }
+  nav {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  footer h6 {
+    color: white;
+    font-size: 12px;
+    margin: 10px; }
+  .redes-sociales {
+    text-align: center; }
+    .redes-sociales .btn-de-red-social-facebook {
+      background-color: #3c5a9a;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 13px;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
+    .redes-sociales .btn-de-red-social-twitter {
+      background-color: #00acee;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 13px;
+      border-color: white;
+      width: 50px;
+      height: 30px; }
+    .redes-sociales .btn-de-red-social-instagram {
+      background-color: violet;
+      margin: 4.54545px;
+      border-radius: 5px;
+      color: white;
+      font-size: 13px;
+      border-color: white;
+      width: 50px;
+      height: 30px; } }

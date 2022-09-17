@@ -1,20 +1,21 @@
 {
-  "name": "npm-de-qatar",
+  "name": "proyecto-qatar",
   "version": "1.0.0",
-  "description": "trabajo-de-qatar",
+  "description": "pawina relacionada al mundial",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss Sass/style.scss style/grupo-h.css",
+    "build-css": "node-sass --include-path scss sass/noticias.scss style/noticias.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-  },
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/manuel9841/proyecto-de-qatar-2022.git"
   },
   "keywords": [
     "qatar",
-    "proyecto"
+    "mundial",
+    "selecciones"
   ],
   "author": "rodrigo-erazo",
   "license": "ISC",
@@ -22,8 +23,8 @@
     "url": "https://github.com/manuel9841/proyecto-de-qatar-2022/issues"
   },
   "homepage": "https://github.com/manuel9841/proyecto-de-qatar-2022#readme",
-  "dependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
   }
 }
